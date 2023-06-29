@@ -9,7 +9,7 @@ const voltages = {};
 
 // Handle GET requests to /voltages
 app.get("/voltages", (req, res) => {
-  res.json(voltages);
+  res.json({ voltages: voltages });
 });
 
 // Handle POST requests to /voltages
